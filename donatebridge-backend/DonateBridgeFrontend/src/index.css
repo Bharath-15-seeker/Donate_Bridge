@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand: #912f56;
+    --brand-hover: #782445;
+    --canvas: #eaf2ef;
+    --charcoal: #23332f;
+    --charcoal-muted: #66736f;
+  }
+
+  body {
+    background-color: #eaf2ef;
+    color: #23332f;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2ede9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b5c7c1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #912f56;
+}
+
+/* Leaflet styling reset inside containers */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  z-index: 10;
+}
